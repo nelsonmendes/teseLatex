@@ -12,6 +12,14 @@ To understand better what is CMMI we need to understand what is Capability model
 A CMM (Capability Maturity Model), including CMMI, is a simplified representation of the world around us. Capability Maturity Models contain essentially elements of effective processes, this elements are based on concepts developed by Crosby, Deming, Juran, and Humphrey.
 
 The SEI (The Carnegie Mellon Software Engineering Institute that is a federally funded research and development center headquartered on the campus of Carnegie Mellon University in Pittsburgh, Pennsylvania, United States) adopted the process management premise, "the quality of a system or product is highly influenced by the quality of the process used to develop it and keep it" and defined CMMs that incorporated this premise.
+\begin{figure}[h]
+	\begin{center}
+		\leavevmode
+		\includegraphics[width=0.86\textwidth]{CMMI_constelations}
+		\caption{History of CMMs}
+		\label{fig:arch}
+	\end{center}
+\end{figure}
 
 \subsection{What is CMMI}
 CMMI stands for Capability Maturity Model Integration and is a process of improvement training, an appraisal program and a service that is administered and sold by the Carnegie Mellon University, and for some business activities is required and mandatory like many DOD (United States Department of Defense) and U.S. Government contracts, especially in software development.
@@ -96,5 +104,128 @@ Statistics are made and updated every six months in a maturity profile since the
 \subsection{SCAMPI}
 SCAMPI is the abbreviation for Standard CMMI Appraisal Method for Process Improvement and is an appraisal method that meets all the ARC requirements.
 In SCAMPI appraisals there are three types of distinct classes: Class A, B and C appraisal methods. The most rigorous method and officially recognized as that is the Class A method, it is the only method that can result in a benchmark quality rating. SCAMPI B and C provide organizations improvements less formal than the class A, however still can identify improvements to be done.
-Results SCAMPI appraisal can be published on the CMMI web site of SEI, fi the organizations approves this. This appraisal supports the conduct of ISO/IEC 15504, Software Process Improvement and Capability Determination (SPICE), a set of technical standards documents for the computer software development process and related business management functions.
-The ARC Class A appraisals is normally conducted by SCAMPI A appraisal. The SCAMPI A Method Definition Document is where its defined rules to ensure the consistency of the appraisal ratings, so the same maturity rated in two companies means they are equal in the methodologies and business processes.
+
+Results SCAMPI appraisal can be published on the CMMI web site of SEI, if the organizations approves this. This appraisal supports the conduct of ISO/IEC 15504, Software Process Improvement and Capability Determination (SPICE), a set of technical standards documents for the computer software development process and related business management functions.
+
+The ARC Class A appraisals is normally conducted by SCAMPI A appraisal. The SCAMPI A Method Definition Document is where its defined rules to ensure the consistency of the appraisal ratings, so the same maturity rated in two companies means they are equal in methodologies and business processes.
+
+\subsubsection{SCAMPI A}
+As said before the class A appraisal is the only full comprehensive appraisal method that involves an ARC class A method and uses CMMI models as reference models.
+
+This appraisal will allow organizations to gain insight about their capability by identifying the strengths and weaknesses of its current processes, prioritize improvement plans, focus on those improvements, correcting weakness that will generate risks, derive capability rating as a maturity level rating and identify risks relative to capability and maturity determinations.
+
+This appraisal follows this principals:
+\begin{itemize}
+	\item Start with a process reference model.
+	\item Use a defined appraisal method.
+	\item Involve senior management as an appraisal sponsor.
+	\item Observe strict confidentiality and non-attribution.
+	\item Approach the appraisal collaboratively. (When SCAMPI is used for Supplier Selection or Process Monitoring modes, it may not be
+	possible to use a collaborative appraisal approach.)
+	\item Focus on the sponsors business objectives
+\end{itemize}
+
+There are some terms to consider with special meaning, Organizational Unit (OU), Organizational Scope, Subgroup, Basic Unit, Support Function, Objective Evidence, Instantiation, Database of Objective Evidence, Practice Characterization.
+
+Definir cada um deles?
+
+\begin{figure}[h]
+	\begin{center}
+		\leavevmode
+		\includegraphics[width=0.86\textwidth]{appraisal_activies}
+		\caption{SCAMPI A activities}
+		\label{fig:arch}
+	\end{center}
+\end{figure}
+
+
+Objective evidence are “footprints” which are
+indicators of the implementation or
+institutionalization of model practices. SCAMPI appraisals use objective evidence as
+the focus to verify practice implementation.
+Verifying practice implementation is the review
+of Objective Evidence to determine whether a
+practice is implemented within a basic unit,
+support function, and/or organization.
+
+Artifacts are
+• A tangible form of objective evidence indicative of work being
+performed that represents either the primary output of a model
+practice or a consequence of implementing a model practice
+
+Examples:
+• Example work products listed in CMMI practices
+• Target products of an “establish and maintain” specific practice
+• Documents, deliverable products, training materials, meeting
+minutes, etc.
+
+Affirmation are
+• An oral or written statement confirming or supporting
+implementation (or lack of implementation) of a model practice
+provided by the implementers of the practice, provide via an
+interactive forum in which the appraisal team has control over the
+interaction.
+Examples:
+• oral affirmations include interview responses, presentations, and
+demonstrations, as long as these presentations and
+demonstrations are provided in an interactive setting.
+• written affirmations include written statements provided by the
+implementers of the practice to the appraisal team via an
+interactive forum.
+
+
+For some practices, documents are accepted as artifacts even if they
+are not the primary intended result of performing the practice. For
+example:
+• CM SP1.2 Establish a configuration management system (this
+could be represented by a schematic or a description of the
+library system from a CM plan)
+• PI SP1.2 Establish the product integration environment (this
+could be represented by a schematic, a description from an
+engineering plan, or a picture)
+• GP 2.5 Train people (this could be represented by training
+records showing that specific individuals have completed specific
+training)
+
+
+Practice Characterization (table)
+
+Appraisal sponsor - Sponsors appraisal
+- Owns appraisal results
+- Signs ADS
+Middle managers - From line or staff management positions
+- Interviewee and data provider
+- *Review preliminary findings
+Basic Unit leaders - Leadership responsibilities for a project, service, etc.
+- Interviewee and data provider
+- *Review preliminary findings
+Support Function - Practitioner
+- Interviewee and data provider
+- Review preliminary findings
+
+Appraisal Team – Key Roles
+Team Leader - Overall responsibility for appraisal
+- SEI-certified SCAMPI leader appraiser and
+has appropriate experience and required
+training
+- Signs Final Findings and ADS
+Team members - Satisfy requirements for team members
+relative to experience and training
+- Assume one or more specific roles
+- Signs Final Findings
+
+
+Team Leader Responsibilities
+Overall responsibility for the
+appraisal
+Ensures planning activities are
+complete
+Assigns team roles
+Ensures SCAMPI appraisal
+process followed
+Monitors schedule and
+performance
+Facilitates team resolution of
+conflicts and impasses
+Interfaces with sponsor
+Reports results to SEI
