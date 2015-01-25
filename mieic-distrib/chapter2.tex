@@ -1,143 +1,96 @@
-\chapter{Revisão Bibliográfica} \label{chap:sota}
+\chapter{Problem analysis} \label{chap:problem}
 
 \section*{}
 
-Neste capítulo é descrito o estado da arte e são
-apresentados trabalhos relacionados para mostrar o que existe no
-mesmo domínio e quais os problemas em aberto.
-Deve deixar claro que existe uma oportunidade de desenvolvimento que
-cobre alguma falha concreta .
+The evaluation for certification is one complex process, and requires many approaches, some acquired knowledge and some experience. To understand the problem and objectives of this dissertation, it is necessary to understand what is CMMI, in particular the SCAMPI method and what is SCRAIM.
 
-O capítulo deve também efetuar uma revisão tecnológica às principais
-ferramentas utilizáveis no âmbito do projeto, justificando futuras
-escolhas.
+\section{CMMI}
 
-\section{Introdução}
+To understand better what is CMMI we need to understand what is Capability model.
 
-Neste capítulo é ilustrada a utilização de macros \LaTeX\ para definir
-entradas no índice remissivo e são feitas diversas referências
-bibliográficas, usando-se texto de um artigo apresentado na Conferência 
-XATA2006~\cite{kn:MVL06-xata}.
+\subsection{CMM}
+A CMM (Capability Maturity Model), including CMMI, is a simplified representation of the world around us. Capability Maturity Models contain essentially elements of effective processes, this elements are based on concepts developed by Crosby, Deming, Juran, and Humphrey.
 
-Nos últimos tempos têm surgido diversas soluções, apresentadas por
-empresas do sector Automação de Sistemas para a disponibilização de
-sistemas \scadadms{} na \textit{Web}.
+The SEI (The Carnegie Mellon Software Engineering Institute that is a federally funded research and development center headquartered on the campus of Carnegie Mellon University in Pittsburgh, Pennsylvania, United States) adopted the process management premise, "the quality of a system or product is highly influenced by the quality of the process used to develop it and keep it" and defined CMMs that incorporated this premise.
 
-Aliquam sollicitudin facilisis sapien. Mauris tincidunt tristique
-diam. Mauris sollicitudin pede at tellus varius volutpat. Integer vel
-leo. Nunc massa diam, egestas eu, venenatis at, porttitor ac,
-sapien. Sed magna elit, vulputate in, lacinia sed, lobortis ac,
-urna. Proin cursus massa id risus. Vestibulum libero. Curabitur
-venenatis augue. Mauris eu libero eget lectus tempus tempor. In
-tincidunt, justo in varius adipiscing, ipsum enim gravida massa, eget
-ornare ante lacus id est. Praesent vitae est ut elit convallis
-convallis. Aenean tincidunt, purus id consectetur volutpat, sem leo
-pulvinar libero, nec semper sem purus ultricies nibh \cite{kn:Fra94-thesis}. 
+\subsection{What is CMMI}
+CMMI stands for Capability Maturity Model Integration and is a process of improvement training, an appraisal program and a service that is administered and sold by the Carnegie Mellon University, and for some business activities is required and mandatory like many DOD (United States Department of Defense) and U.S. Government contracts, especially in software development.
 
-Fusce risus mi, tristique eu, consectetuer id, auctor sed, elit. Donec
-laoreet. Duis consectetuer interdum libero. Etiam eu orci. In eu
-arcu. Fusce luctus diam eget lectus. Duis interdum lacus sed
-ligula. Proin vestibulum felis eget lacus. Vivamus vestibulum, tellus
-ut congue viverra, mauris lacus tempor turpis, eu congue nisi magna at
-dolor. Ut molestie vehicula libero. Praesent in neque sed risus tempus
-ornare. Donec hendrerit, erat eu semper aliquam, pede nulla dapibus
-risus, ut pretium orci pede et neque.
-Etiam eget tortor a metus convallis viverra. Quisque eget nisi sed
-orci facilisis interdum. Aliquam non felis. 
+Carnegie Mellon University says that CMMI can be used to guide an organization, a division and process improvement across projects. The CMMI processes and methodologies can be classified according to maturity levels.
 
-\section{Secção Exemplo}\label{sec:dialecto}
+Currently CMMI is on Version 1.3 and is registered in the United States Patent and Trademark Office by Carnegie Mellon University.
 
-\emph{Scalable Vector Graphics}\index{SVG}\index{XML!SVG} é uma
-linguagem em formato XML que descreve gráficos de duas dimensões. 
-Este formato padronizado pela W3C (\emph{World Wide Web Consortium})
-é livre de patentes ou direitos de autor e está totalmente
-documentado, à semelhança de outros W3C
-standards~\cite{kn:svgdoc}.
+\subsection{CMMI models and process areas}
+Best practices of CMMI are published in documents called models, each models is addressed to a different area of interest. The current version of CMMI, version 1.3, has three different areas of interest: development, acquisition and services.
 
-Sendo uma linguagem XML, o \svg{} herda uma série de vantagens: a
-possibilidade de transformar \svg{} usando técnicas como
-XSLT\index{XML!XSLT}, de embeber \svg{} em qualquer documento
-XML\index{XML} usando \textit{namespaces} ou até de  
-estilizar \svg{} recorrendo a CSS\index{CSS} (\emph{Cascade Style Sheets}). 
-De uma forma geral, pode dizer-se que \svg{}s interagem bem com as
-atuais tecnologias ligadas ao XML e à Web, tal como referido
-em~\cite{kn:svgibm,kn:svgw3c}.
+These models are produced taking for base the CMMI framework that contains all the goals and practices used to produce the models that are part of CMMI constellations. The CMMI models contain 16 core process areas, they cover basic concepts fundamental to process improvement in any area of interest. 
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec a
-eros. Phasellus non nulla non massa venenatis convallis. In
-porta. Mauris quis magna. Proin mauris eros, aliquet id, eleifend
-vitae, semper quis, erat. Aliquam id lectus non odio dignissim
-blandit. Vestibulum porttitor arcu ut ligula. Nunc quis
-erat. Curabitur ipsum tortor, ornare vitae, dapibus pretium, hendrerit
-sed, urna. Vestibulum ante ipsum primis in faucibus orci luctus et
-ultrices posuere cubilia Curae; Phasellus bibendum, nulla eget varius
-aliquam, tortor nulla sollicitudin quam, vel vestibulum nisl magna at
-sem. Aliquam velit sapien, ultrices viverra, tempus quis, ultrices at,
-dui. Aliquam sit amet justo. 
+The material in core process areas it is almost the same for all constellations of CMMI, the rest of the material need to be adjusted to a specific area of interest, so the material wont be the exactly the same.
 
-Quisque tristique, metus eu iaculis
-sagittis, urna leo bibendum diam, a ultricies sem diam a augue. Mauris
-consectetuer, libero vel euismod tincidunt, nisi metus viverra ante,
-quis pretium sapien odio nec risus. Nunc semper auctor
-nulla\footnote{Exemplo de nota de rodapé.}. 
+\subsection{CMMI model framework}
+CMMI framework is a basic structure that organizes and groups the CMMI components, elements of the current models, rules, methods for model generations, appraisal methods and training material, contains too process areas that will vary for each one of the CMMI areas that will be used. Process areas are the areas that cover the organization processes.
 
-\subsection{Subsecção Exemplo} \label{batik} 
+For the latest version of CMMI for Development (Version 1.3) there are 22 Process Areas, which represents the product aspects and the coverage for the organizational processes.
 
-Batik é um conjunto de bibliotecas baseadas em \textit{Java} que
-permitem o uso de imagens \svg{} (visualização, geração ou
-manipulação) em aplicações ou \textit{applets}~\cite{kn:batik}.  
-O projeto Batik\index{Batik} destina-se a fornecer ao programador
-alguns módulos que permitem desenvolver soluções especificas usando
-\svg~\cite{kn:svgdoc}. 
+\subsection{Maturity levels in CMMI for development}
+\begin{figure}[h]
+	\begin{center}
+		\leavevmode
+		\includegraphics[width=0.86\textwidth]{Maturitylevels}
+		\caption{CMMI maturity levels}
+		\label{fig:arch}
+	\end{center}
+\end{figure}
+Processes under the CMMI methodology are rated and grouped according levels, called maturity levels. There are five levels of maturity levels defined as: Initial, Managed, Defined, Quantitatively Managed, Optimizing. These maturity levels that are rated are presented and awarded for levels 2 through 5. The following process areas listed show us the maturity levels for CMMI for Development:
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc eu
-nulla. Pellentesque vitae nibh ultrices quam iaculis
-convallis. Aliquam purus eros, varius eget, volutpat sodales,
-imperdiet nec, lacus. Curabitur in elit sed sem rutrum posuere. Class
-aptent taciti sociosqu ad litora torquent per conubia nostra, per
-inceptos himenaeos. Duis sem. Praesent ultricies odio vel
-sapien. Integer faucibus malesuada libero. Cras semper, dolor id
-ullamcorper varius, magna risus volutpat felis, id pellentesque nulla
-ante at erat. Integer sodales. 
+\begin{itemize}
+	\item Maturity Level 2 - Managed
+	\begin{itemize}
+		\item CM - Configuration Management
+		\item Measurement and Analysis
+		\item PMC - Project Monitoring and Control
+		\item PP - Project Planning
+		\item PPQA - Process and Product Quality Assurance
+		\item REQM - Requirements Management
+		\item SAM - Supplier Agreement Management
 
-Quisque sit amet odio. In at risus sit amet turpis interdum
-posuere. Maecenas iaculis vehicula sem. Ut leo arcu, malesuada vel,
-imperdiet id, dignissim a, purus. Duis eleifend, lectus non venenatis
-dignissim, risus libero imperdiet mi, nec gravida massa libero sed
-mauris. Nullam lobortis libero non sapien. Integer convallis iaculis
-erat. Morbi dictum. Ut ultrices pellentesque velit. Cras ac
-ante. Etiam in neque tincidunt lacus gravida vehicula. Proin et nisi. 
+	\end{itemize}
+	\item Maturity Level 3 - Defined
+	\begin{itemize}
+		\item DAR - Decision Analysis and Resolution
+		\item IPM - Integrated Project Management
+		\item OPD - Organizational Process Definition
+		\item OPF - Organizational Process Focus
+		\item OT - Organizational Training
+		\item PI - Product Integration
+		\item RD - Requirements Development
+		\item RSKM - Risk Management
+		\item TS - Technical Solution
+		\item VAL - Validation
+		\item VER – Verification	
+	\end{itemize}
+	\item Maturity Level 4 - Quantitatively Managed
+	\begin{itemize}
+		\item OPP - Organizational Process Performance
+		\item QPM - Quantitative Project Management		
+	\end{itemize}
+	\item Maturity Level 5 - Optimizing
+	\begin{itemize}
+	\item CAR - Causal Analysis and Resolution
+	\item OPM - Organizational Performance Management
+	\end{itemize}
+\end{itemize}
 
-\subsection{Subsecção Exemplo}
 
-Loren ipsum dolor sit amet, consectetuer adipiscing elit. 
-Praesent sit amet sem. Maecenas eleifend facilisis leo. Vestibulum et
-mi. Aliquam posuere, ante non tristique consectetuer, dui elit
-scelerisque augue, eu vehicula nibh nisi ac est. Suspendisse elementum
-sodales felis. Nullam laoreet fermentum urna. 
+\subsection{Appraisal}
+Organizations cannot be certified in CMMI, so there is something called appraisal and an organization is appraised.
 
-Loren ipsum dolor sit amet, consectetuer adipiscing elit. 
-Praesent sit amet sem. Maecenas eleifend facilisis leo. Vestibulum et
-mi. Aliquam posuere, ante non tristique consectetuer, dui elit
-scelerisque augue, eu vehicula nibh nisi ac est. Suspendisse elementum
-sodales felis. Nullam laoreet fermentum urna. 
+In an appraisal the organization gets awarded a maturity level from one to five or a capability level achievement profile. As said before many organizations are required to get some kind of recognition and others find value measuring their progress such determine how well the processes adopted by the organization are compared to CMMI best practices, to meet contractual and customers requirements and to know which areas they can improve and appraisals are the right way to do it.
 
-Duis eget diam. In est justo, tristique in, lacinia vel, feugiat eget,
-quam. Pellentesque habitant morbi tristique senectus et netus et
-malesuada fames ac turpis egestas. Fusce feugiat, elit ac placerat
-fermentum, augue nisl ultricies eros, id fringilla enim sapien eu
-felis. Vestibulum ante ipsum primis in faucibus orci luctus et
-ultrices posuere cubilia Curae; Sed dolor mi, porttitor quis,
-condimentum sed, luctus in. 
+Appraisals using a CMMI model must comply with the requirements set out in the Appraisal Requirements for CMMI (ARC) document. There are three classes of appraisals, A, B and C, all of them compare the processes used in the organization to CMMI processes and best practices, that way is identified improvements to make. From all three classes of appraisals the most formal is class A and it is the only one that can output a level rating.
 
-\section{Resumo ou Conclusões}
+When an appraisal is done teams use a CMMI model and an ARC document. The results from the teams are used to plan improvements for the organization.
 
-No final do capítulo deverá ser apresentado um resumo com as 
-principais conclusões que se podem tirar. 
+Statistics are made and updated every six months in a maturity profile since the release of CMMI show us that the median times to move from Level 1 to Level 2 is 5 months, from that to Level 3 more 21 months.
 
-Vivamus non nunc nec risus tempor varius. Quisque bibendum mi at
-dolor. Aliquam consectetuer condimentum risus. Aliquam luctus pulvinar
-sem. Duis aliquam, urna et vulputate tristique, dui elit aliquet nibh,
-vel dignissim magna turpis id sapien. Duis commodo sem id
-quam. Phasellus dolor. Class aptent taciti sociosqu ad litora torquent
-per conubia nostra, per inceptos himenaeos. 
+\subsection{SCAMPI}
