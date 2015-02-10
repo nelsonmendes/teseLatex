@@ -44,6 +44,8 @@ The answers are editable before the submission of the assessment in a screen for
 
 After answering all questions provided as requirement and those survey submitted will be show a high level snapshot of the organization  current capability states and will be included in each item some suggestions for developing the next steps.
 
+\newpage
+
 \begin{figure}[h]
 	\begin{center}
 		\leavevmode
@@ -63,11 +65,59 @@ PSP\citep{humphrey2005psp} is a process framework with the objective of guide de
 
 PSPChecker\citep{Pinto2010} is a tool that has the main objective of helping teachers to make decisions faster and help students to be able to achieve better results and understand PSP.
 
-Despite PSPChecker was made only for teachers
+The PSPChecker was only made and planned for teachers as a support for evaluation and feedback it's suitable for students too depending on the type of teaching, that way they can improve their work. A short period of time is required to uses this tool and is currently only as a desktop application.
 
-PSPChecker was planned only to be available to teachers as a support for evaluation and
-feedback. But depending on the type of teaching this tool can be also provided to students to improve their work. PSPChecker is user friendly. Users
-PSPChecker should provide a simple and intuitive interface that allows users use it after
-a short period of learning (Maximum 2 hours). Initially PSPChecker work as a desktop application.
 
-\section{Appraisal and assessment assistant tools}
+This desktop application has as main functionalities:
+\begin{itemize}
+	\item Automatic verification of checklists
+	\subitem Each checklist item has different types of verification and as output if an item in the checklist is completely satisfied, it is shown the line in green otherwise red line is shown or given a special message on the screen.
+	\item Custom processes
+	\subitem The user when start the program can choose which items of the PSP process want to associate with this evaluation.
+	\item Remote data importation
+	\item Illustrative charts
+	\subitem Charts that facilitate the perception of whats is wrong and well done to understand which points can be improved.
+	\item Automation of support messages (use of knowledge acquired by specialists)
+	\subitem Messages provided by specialist to understand the errors in a more complex level.
+	\item Information Import/Export
+	\begin{figure}[h]
+		\begin{center}
+			\leavevmode
+			\includegraphics[width=0.63\textwidth]{PSPdataimport}
+			\caption{Example of a data import for PSPChecker}
+			\label{fig:PSPdataimport}
+		\end{center}
+	\end{figure}
+	\item Modularity and scalability
+\end{itemize}
+
+\begin{figure}[h]
+	\begin{center}
+		\leavevmode
+		\includegraphics[width=0.8\textwidth]{PSPresult}
+		\caption{Final results of PSPChecker}
+		\label{fig:PSPdataimport}
+	\end{center}
+\end{figure}
+
+In the Figure \ref{fig:PSPdataimport} is represented two of the last screens of PSPChecker. Is shown on the left side the checklist imported or chosen and on the right side the final screen, where we can generate charts and export the data.
+
+\section{Appraisal Assistant}
+
+The Software Quality Institute of the Griffith University developed Appraisal Assistant. The Appraisal Assistant is a software application that supports the appraisal or assessment of process capability or organization maturity.
+
+
+
+It closely follows approaches consistent with the requirements of ISO/IEC 15504 - Information technology: Process assessment, and the Assessment Requirements for CMMI®.Unlike other existing tools, Appraisal Assistant takes an explicitly evidence-driven approach to recording the information generated in an assessment. A high-level demonstration of its operation can be found here. The approach is similar to that described here in recording the information generated in an assessment.
+
+The Appraisal Assistant has been used by SQI personnels to perform SCAMPI A/B appraisals and SPICE assessments. The 1st BETA version was used in a pilot appraisal to examine the relationships between ISO 15504-2 and SCAMPI appraisals. The report is available here. Many findings from this case study are now incorporated into the newer version of Appraisal Assistant.
+
+
+Support for multiple process models - this beta version includes ISO/IEC 15504-5, ISO/IEC 15504-6 (FDIS), Automotive SPICE, CMMI®-DEV v.1.2, +SAFE, and CMMI® SE/SW/IPPD/SS V 1.1.
+- Support for user defined appraisal models
+- Support for multiple methods of performing assessment / appraisal, including SCAMPISM A (v.1.2) and B Class, and generic ISO/IEC 15504 conformant assessment methods.
+- Support for user defined assessment methods
+- Support for conversion of results from one framework to another; i.e. expression of CMMI® Appraisal results as ISO 15504 standard process profiles,and definition of coverage of ISO 9001 requirements by CMMI® or ISO 15504 assessments / appraisals.
+- Facility to split and consolidate evidence capture activities within the team through the establishment of mini-teams.
+- Automatic generation of a variety of reports, including Appraisal Disclosure Statement, PIID, Assessment Record, Appraisal / Assessment Findings, Strength / Weakness summaries, Rating Profiles, and workload summaries.
+- Automatic reporting of model coverage by collected evidence, to meet the requirements of the SCAMPISM A v.1.2 method.
