@@ -17,7 +17,7 @@ The SEI (The Carnegie Mellon Software Engineering Institute that is a federally 
 \begin{figure}[h]
 	\begin{center}
 		\leavevmode
-		\includegraphics[width=0.86\textwidth]{CMMI_constelations}
+		\includegraphics[width=0.6\textwidth]{CMMI_constelations}
 		\caption{History of CMMs}
 		\label{fig:historycmmi}
 	\end{center}
@@ -40,7 +40,29 @@ Best practices of CMMI are published in documents called models, each model addr
 
 These models are produced taking for base the CMMI framework that contains all the goals and practices used to produce the models that are part of CMMI constellations. The CMMI models contain 16 core process areas, they cover basic concepts fundamental to process improvement in any area of interest. 
 
+\begin{figure}[h]
+	\begin{center}
+		\leavevmode
+		\includegraphics[width=0.7\textwidth]{goalsandpractices}
+		\caption{Specific and generic goals and practices}
+		\label{fig:goalsandpractices}
+	\end{center}
+\end{figure}
+
+
+For each process area can be defined a set of goals and practices, the Figure \ref{fig:goalsandpractices} is a diagram where is shown the connection between process areas, goals and practices. 
+
+There are two types of goals and practices:
+\begin{itemize}
+	\item Generic goals and practices: Part of every process area.
+	\item Specific goals and practices: Specific to a given process area.
+\end{itemize}
+
+A process area is satisfied only when the company processes cover all specific and generic practices and goals for the process area idealized.
+
 The material in core process areas is almost the same for all constellations of CMMI, the rest of the material need to be adjusted to a specific area of interest, so the material wont be exactly the same.
+
+
 
 \subsection{CMMI model framework}
 CMMI framework is a basic structure that organizes and groups the CMMI components, elements of the current models, rules, methods for model generations, appraisal methods and training material, contains too process areas that will vary for each one of the CMMI areas that will be used. Process areas are the areas that cover the organization processes.
@@ -57,11 +79,26 @@ The continuous representation is represented by capability levels. Allows each o
 
 The staged representation is designed to provide a standard sequence of improvements, by maturity levels, each serving as foundation for the next. This representation results in a single rating (Maturity Level) that summarizes appraisal results and can serve as a basis for comparing the maturity of different projects and organizations.
 
+Each representation has advantages and disadvantages. Staged representation is focused by organizational maturity, continuous representation, by the hand is focused by process are capability.
+
+Organizational maturity and process area capability are similar concepts. The difference between them is that organizational maturity pertains to a set of process areas across an organization, while process area capability deals with a set of processes relating to a single process area or specific practice.
+
+In the pictorial diagram bellow in the Figure \ref{fig:cmmirepresentation} both the presentations are represented where ML represents Maturity Level and PA represents Process Area.
+
+\begin{figure}[h]
+	\begin{center}
+		\leavevmode
+		\includegraphics[width=0.6\textwidth]{cmmirepresentation}
+		\caption{CMMI representations}
+		\label{fig:cmmirepresentation}
+	\end{center}
+\end{figure}
+
 \subsection{Maturity levels in CMMI for development}
 \begin{figure}[h]
 	\begin{center}
 		\leavevmode
-		\includegraphics[width=0.86\textwidth]{Maturitylevels}
+		\includegraphics[width=0.6\textwidth]{Maturitylevels}
 		\caption{CMMI maturity levels}
 		\label{fig:maturitylevels}
 	\end{center}
@@ -106,9 +143,22 @@ Processes under the CMMI methodology are rated and grouped in maturity levels. T
 %\end{itemize}
 
 \subsection{Capability levels in CMMI for development}
-A capability level is a well-defined evolutionary plateau describing the organization’s capability relative to a process area.
 
-\subsection{Specific practices and generic practices}
+In CMMI models with a continuous representation, there are six capability levels designated by the numbers 0 through 5.
+
+A capability level is a plateau that describes the organization's capability relative to a process area and consists in a group of related specific and generic practices associated with a process area; can improve the organization's processes in that process area.
+
+Capability levels are also cumulative, so a higher capability levels contains the attributes of the lower levels.
+
+\begin{figure}[h]
+	\begin{center}
+		\leavevmode
+		\includegraphics[width=0.8\textwidth]{capability}
+		\caption{CMMI maturity levels}
+		\label{fig:capabilitylevels}
+	\end{center}
+\end{figure}
+
 
 \section{SCAMPI}
 Organizations cannot be certified in CMMI, so there is something called appraisal and an organization is appraised.
@@ -153,8 +203,8 @@ The Method Definition Document is a document that describes SCAMPI appraisal met
 
 There are essentially three phases in the process:
 \begin{itemize}
-	\item Phase I - Plan and Prepare for Appraisal 
-	\item Phase II – Conduct Appraisal
+	\item Phase I - Plan and Prepare for Appraisal presented in the Figure \ref{fig:plan_appraisal}
+	\item Phase II – Conduct Appraisal presented in the Figure \ref{fig:results_appraisal}
 	\item Phase III – Report Results
 \end{itemize}
 
@@ -206,7 +256,7 @@ Instantiation is the implementation of a model practice used in its context in t
 \subsection{Practice characterization}
 Practices Implementation Indicators (PII) are a proof of  a correct implementation of a certain CMMI Practice. When a Practice is performed will leave a mark or evidence of that operation, for example that evidence can be a document produced while the practice is performed.
 
-Appraisers look for an objective evidence in order to make an assessment. There are three types of indicators presented in the SCAMPI documentation.
+Appraisers look for an objective evidence in order to make an assessment. There are three types of indicators presented in the Table \ref{tab:Indicator}.
 
 
 \begin{table}[h]
@@ -268,7 +318,7 @@ Appraisers look for an objective evidence in order to make an assessment. There 
 
  
 \newpage
-After the collection of an evidence and properly examined is made a characterization of the extent to which Model practices are implemented. The model practices are characterized as described in the next table.
+After the collection of an evidence and properly examined is made a characterization of the extent to which Model practices are implemented. The model practices are characterized as described in the Table \ref{tab:characterizations}.
 \newline
 
 \begin{table}[h]
@@ -333,11 +383,8 @@ The appraisal team is composed by two main Key Roles: Team Leader and Team Membe
 Team Leader is the person who has the overall responsibility for the appraisal, is a SEI - Certified SCAMPI\citep{SCAMPITeam2013} leader appraisal and has experience and training, he signs too the final findings.
 Team members are those who satisfy requirements of  experience and training to be part of the team and they assume one or more specific roles.
 
-\subsection{Team leader responsibilities}
-
 One of the key roles of the appraisal team is the team leader who has overall responsibility for the appraisal. He is also responsible for assign team roles for each member, ensuring that the planning activities are complete, that the SCAMPI process is being followed, scheduling monitoring and checking performance, facilitate team resolution in case of conflicts and impasses and reporting results to SEI.
 
-\subsection{Team member responsibilities}
 For each team member the team leader will assign a role that will ensure the proper function of the team and will facilitate the appraisal, those roles are the following:
 \begin{itemize}
 	\item Appraisal coordinator
