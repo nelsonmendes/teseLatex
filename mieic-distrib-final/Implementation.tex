@@ -11,7 +11,7 @@ The best solution would be an architecture that was flexible enough and could be
 
 The architecture of the solution can divided into two parts, its database structure and the overall application structure.
 
-\subsection{Database structure}
+\section{Database structure}\label{database}
 
 This model was implemented inside of Scraim, in order to store all the information that is generated an extension of its database was done.
 
@@ -69,23 +69,52 @@ In the Figure \ref{fig:entity-relation} is represented in a systematic way the o
 
 With this model of database was possible to achieve the goals and obtain the pretended results.
 
-\subsection{Module Structure}
+\section{Module Structure}
 
 As said before, the module structure was object of study and its components were carefully analyzed in order to main a crucial consistency and scalability.
 
-In the Figure \ref{fig:esquema} we can see the overall structure of the module created.
+In the Figure \ref{fig:esquema} we can see the overall structure of the module created. The elements shown have a specific role in maintaining the module flexibility. 
 
-%Dar uma ideia, estrutura de criação - explicar o mvc de um modo da implementação
-%Facilidade de extensão e configuração - customização (mostrar como pode ser feito)
+\textbf{Database}
+
+Explained in the Section \ref{database}.
+
+\textbf{Abstract Evaluator}
+
+Represents the practices criteria. For each practice the evaluation is different, so will the function that is going to generate the result of that evaluation is different, has a different logic, but has an analog structure. All the Practices Evaluation follow the same structure.
+%explicar a estrutura
+
+\textbf{Area Evaluator}
+This Part of the Module is a function that depending of the Area, calls all the practice evaluators and receives the result of that.
+
+
+\textbf{Project Info}
+This Function is called to get the project info needed to do the assessment of the assessment of the practice. The info returned will ba passed through the Area Evaluator to the Practice Evaluator represented by the Abstract Evaluator.
+
+\textbf{Main Function}
+
+Its the constructor and main function of the module, calls the functions that evaluate and save the practices evaluations.
 
 \begin{landscape}
-\begin{figure}[h]
+\begin{figure}[f]
 	\begin{center}
 		\leavevmode
-		\includegraphics[width=1.2\textwidth]{esquema}
+		\includegraphics[width=1.5\textwidth]{esquema}
 		\caption{Entity-relation model}
 		\label{fig:esquema}
 	\end{center}
 \end{figure}
 \end{landscape}
 
+\section{Scalability and Flexibility}
+
+In the Figure \ref{fig:esquema} its observable two notes that describe a way of expanding this model.
+
+The model represented is fully capable of handling expansions of the database and the practices evaluators, the only thing needed is follow some steps:
+\begin{itemize}
+	\item \textbf{Database Insertion: } Is need to include in the file that starts the database the info of the new models(areas, goals and practices), that are going to be inserted into the tables.
+	\item \textbf{Implement all Practices evaluators: } Must be implemented the rules evaluators, those evaluators are represented by the abstract evaluator.
+	\item \textbf{Add to the Main Function: } The function that is going to evaluate the practices must be added to the Main Function to be called in the assessment.
+\end{itemize}
+
+After this steps the new models added are evaluated and present in the assessment.
