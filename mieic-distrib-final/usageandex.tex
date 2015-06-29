@@ -17,7 +17,7 @@ As said before all of this was implemented inside Scraim, so as a prerequisite i
 
 So if an user that is registered in Scraim is logged in his account, on the side bar of Scraim (its menu) is possible to see the assessment logo and if we click on that we will be guided to the assessments module homepage, presented in the Figure \ref{fig:no_assessments}.
 
-\begin{figure}[h]
+\begin{figure}[!htb]
 	\begin{center}
 		\leavevmode
 		\includegraphics[width=0.9\textwidth]{no_assessments}
@@ -28,7 +28,7 @@ So if an user that is registered in Scraim is logged in his account, on the side
 
 This screen is shown when we don't have assessments performed. If there are some done in this screen is presented a list of the assessments, like in the Figure \ref{fig:done_assessments}. In the Image, the three assessments are shown by ascending date order, so on bot are the most recent assessments.
 
-\begin{figure}[h]
+\begin{figure}[!htb]
 	\begin{center}
 		\leavevmode
 		\includegraphics[width=0.9\textwidth]{done_assessments}
@@ -44,7 +44,7 @@ This screen is shown when we don't have assessments performed. If there are some
 
 In the Figure \ref{fig:done_assessments}, on the right top corner there is a button that says "New assessment". When that button is pressed the application leads us to a screen where is prepared the assessment. This preparation screen can be seen in the Figure \ref{fig:prepare_assessment}, in this page is needed to specify the name of the assessment if we want a custom name for the assessment. If the name is not specified a automatic name will be generated with the performed time and date of the assessment. Is needed too choose the project or projects that are going to be evaluated.
 
-\begin{figure}[h]
+\begin{figure}[!htb]
 	\begin{center}
 		\leavevmode
 		\includegraphics[width=0.9\textwidth]{prepare_assessment}
@@ -59,7 +59,7 @@ Only the text field can be empty, is mandatory to choose at least one project. A
 
 \textbf{Survey Screen}
 
-\begin{figure}[h]
+\begin{figure}[!htb]
 	\begin{center}
 		\leavevmode
 		\includegraphics[width=0.9\textwidth]{goto_survey}
@@ -88,7 +88,7 @@ When all the process is completed we can see the results obtained, the results c
 When inside the graph a certain area is clicked, like for example PP which stands for Project Planning, the content of the graph changes to the practices results, that can be checked in the Figure \ref{fig:practices_view}.
 
 
-\begin{figure}[h]
+\begin{figure}[!htb]
 	\begin{center}
 		\leavevmode
 		\includegraphics[width=0.9\textwidth]{practices_view}
@@ -99,7 +99,7 @@ When inside the graph a certain area is clicked, like for example PP which stand
 
 Is possible to see more in detail the assessment result if the mouse cursor is over the bar that correspond to a practice, when that bar is clicked, is shown in the page more info about that practice. The Figure \ref{fig:practice_click}, shows us the information appended to the page when the Practice 1.1 of the first goal of Project Planning Area is clicked.
 
-\begin{figure}[h]
+\begin{figure}[!htb]
 	\begin{center}
 		\leavevmode
 		\includegraphics[width=0.9\textwidth]{practice_click}
@@ -123,12 +123,12 @@ The Implemented areas are Project Planning and Project Monitoring and Control, t
 \section{Comparison between Automatic and Manual assessment} \label{sec:automatic}
 %	Avaliação manual vs automatica trocar titulo
 
-To determine if the implemented module is close to a real assessment is necessary to compare an automatic assessment (tool) and a manual assessment (human).
+To determine if the implemented module is close to a real assessment is necessary to compare an automatic assessment (tool) to a manual assessment (human).
 
-The chosen project is already finished and instantiated on SCRAIM.
-The Manual assessment that is shown in Figure \ref{fig:manual_assessment} was performed by a Consultant from Strongstep.
+For that purpose is chosen a project that is already finished and instantiated on SCRAIM.
+In both assessments we can see that only the two areas featured on the implementation of this module are object of this comparison.
 
-\begin{figure}[h]
+\begin{figure}[!htb]
 	\begin{center}
 		\leavevmode
 		\includegraphics[width=0.9\textwidth]{manual_assessment}
@@ -137,15 +137,52 @@ The Manual assessment that is shown in Figure \ref{fig:manual_assessment} was pe
 	\end{center}
 \end{figure}
 
-The Automatic assessment performed by the developed module can be seen in Figure \ref{fig:automatic_assessment}
+\textbf{Manual Assessment}
 
-\begin{figure}[h]
+The Manual assessment that is shown in Figure \ref{fig:manual_assessment} was performed by a Consultant from Strongstep.
+
+In the manual assessment we can see that in Project Planing for the first goal only the last practice is not implemented and the others practices are Partially implemented. For the second goal all practices are partially implemented except the first one.
+In the third goal only the last practice is partially implemented the others are not implemented.
+
+For the area Project Monitoring and Control in the first goal the first and forth practices are classified as not implemented and the other as partially implemented. In the second goal all practices are not implemented.
+
+\textbf{Automatic Assessment}
+
+The Automatic assessment performed by the developed module can be seen in Figure \ref{fig:automatic_assessment}.
+
+\begin{figure}[!htb]
 	\begin{center}
 		\leavevmode
-		\includegraphics[width=0.9\textwidth]{manual_assessment}
+		\includegraphics[width=0.9\textwidth]{automatic_assessment}
 		\caption{Scraim Automatic Assessment}
 		\label{fig:automatic_assessment}
 	\end{center}
 \end{figure}
 
-In both assessments we can see that only the two areas featured on SCRAIM are object of this comparison.
+In Figure \ref{fig:automatic_assessment} is presented the assessment of the two areas, in this case the assessment result for the areas of PP and PMC are 2 and 2 in the SCRAIM scale.
+
+For the PP area, the practices results are shown in Figure \ref{fig:results_pp}.
+
+Using for method of approximation the scale presented in Section \ref{sec:mapping} and comparing the automatic results with the Manual assessment shown before is possible to say in the most cases the mapping of the tool matched the manual assessment. In some cases like  the SP.2.2 the risks of the project weren't recorded on SCRAIM but in a document attached to the project.
+
+
+Results for PMC area are represented in Figure \ref{fig:results_pmc}. Using the same method that used before and comparing the two results, none practice stands out from the results, so the results are close to a real assessment.
+
+
+\begin{figure}[!htb]
+	\begin{center}
+		\leavevmode
+		\includegraphics[width=0.9\textwidth]{results_pmc}
+		\caption{Project Monitoring Control Results}
+		\label{fig:results_pp}
+	\end{center}
+\end{figure}
+
+\begin{figure}[!htb]
+	\begin{center}
+		\leavevmode
+		\includegraphics[width=0.9\textwidth]{results_pp}
+		\caption{Project Planning Results}
+		\label{fig:results_pmc}
+	\end{center}
+\end{figure}
