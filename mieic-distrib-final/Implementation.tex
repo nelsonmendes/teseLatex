@@ -5,11 +5,16 @@
 This chapter describes the details of implementation, in particular the architecture of the tool and the processes involved.
 
 \section{Architecture of the solution} \label{sec:evaluation}
+
+The solution is module implemented on SCRAIM using the same technologies and same infrastructures. SCRAIM uses as programming language Ruby on Rails \citep{hansson2009ruby} and a MySQL \citep{MySql} database. The solution uses also a new framework for charts c3js \ref{c3js}.
+
 The architecture of this tool was subject of an intense and extensive study and deliberation in order to be implement the best solution.
 
-The best solution would be an architecture that was flexible enough and could be easy to extended,with that the prototype to can achieve more models of assessments and consequently more practices evaluated.
+The best solution would be an architecture that was flexible enough and could be easy to extended, with that, the prototype to can achieve more models of assessments and consequently more practices evaluated.
 
 The architecture of the solution can divided into two parts, its database structure and the overall application structure.
+
+
 
 \section{Database structure}\label{database}
 
@@ -53,19 +58,6 @@ The tables created can be viewed in the Figure \ref{fig:database}, and each purp
 
 
 On the left side of the Figure \ref{fig:database}, the tables represented are those who are going to be populated with the information from the CMMI for Development and in the right side is where the generated information is going to be stored.
-
-In the Figure \ref{fig:entity-relation} is represented in a systematic way the overall interaction and process in the database, its dependencies and its flow.
-
-
-
-\begin{figure}[h]
-	\begin{center}
-		\leavevmode
-		\includegraphics[width=0.6\textwidth]{Entity-Relationship-Model}
-		\caption{Entity-relation model}
-		\label{fig:entity-relation}
-	\end{center}
-\end{figure}
 
 With this model of database was possible to achieve the goals and obtain the pretended results.
 

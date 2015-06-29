@@ -6,13 +6,14 @@ In this chapter is clarified and presented the scope of the project and the expl
 
 \section{Assessment Process} \label{sec:Approach}
 
-The Electronic assessment process can be represented by the Figure \ref{fig:assessmentprocess}.
-The process starts with a selection of the projects needed to evaluate and process areas to evaluate then for each evaluation, we have two ongoing tasks. This ongoing tasks are the Survey based electronic assessment and the Rule based assessment.
+The Electronic assessment process is represented in Figure \ref{fig:assessmentprocess}.
+The process starts with a selection of the projects needed to evaluate and process areas to evaluate; then for each evaluation, we have two ongoing tasks. These ongoing tasks are the Survey based electronic assessment and the Rule based assessment.
 
-The Survey based electronic assessment is a manual process where the user needs to answer the questions that are provided. The Rule based electronic assessment if fully automatic and those rules are work of and part of this thesis.
+The Survey based electronic assessment is a manual process where the user needs to answer the questions that are provided. The Rule based electronic assessment is fully automatic using the rules conceived in this thesis.
 
-Both these assessments receive Project data to generate the results that can see after. In this model is present too the manual adjustment, a part that can be useful if in some case a certain part is not evaluated correctly or the assessment result is by consented opinion of the team accepted or rejected. And for last is shown the final results. 
+Both these assessments receive Project data to generate the results that can be seen afterwards. In this model is present too the manual adjustment, a part that can be useful if in some case a certain part is not evaluated correctly or the assessment result is by consented opinion of the team accepted or rejected. And for last is shown the final results. 
 
+The details of rule based and survey based assessment are provided in section \ref{sec:mapping} and \ref{sec:question}.
 
 In order to get a full overview of the Scraim, an assessment of the tool was performed. That assessment provides the current state of the tool and possible gaps to workaround.
 After analyzing the gaps a map can be done, that map was done between CMMI for development practices and the tool.
@@ -28,13 +29,13 @@ After analyzing the gaps a map can be done, that map was done between CMMI for d
 	\end{figure}
 \end{landscape}
 
-\section{Pre-Assessment of Scraim Support}
+\section{Pre-Assessment of Scraim Support} \label{sec:preassessment}
 
-In a primary phase as mentioned before, an assessment of the tool was performed. The actual purpose of this assessment was try to see if it was possible and currently viable match Scraim and its functionalities with the third maturity level of CMMI for Development.
+In a primary phase as mentioned before, an assessment of the tool was performed. The actual purpose of this assessment was to check if it was possible and currently viable to match Scraim and its functionalities with the third maturity level of CMMI for Development.
 
-Maturity levels are a predefined set of process areas, measured by the respective goals of those areas and their practices. So if Scraim could be mapped to a more extensive number of practices and goals, a higher level of maturity could be covered.
+Maturity levels comprise a set of process areas, measured by the respective goals of those areas and their practices. So if Scraim could be mapped to a more extensive number of practices and goals, a higher level of maturity could be covered.
 
-The assessment was done with Appraisal Assistant, a tool currently used to assist and help appraisals in the field. This tool will allow to show the results in a matrix providing a full overview of the current state and the coverage of Scraim in relation to the maturity level number 3 of CMMI for Development.
+The assessment was done with Appraisal Assistant, a tool currently used to assist and help appraisals in the field(see section \ref{chap:chap3}). This tool allows to show the results in a matrix providing a full overview of the current state and the coverage of Scraim in relation to the maturity level 3 of CMMI for Development.
 
 
 \begin{figure}[h]
@@ -46,13 +47,13 @@ The assessment was done with Appraisal Assistant, a tool currently used to assis
 	\end{center}
 \end{figure}
 
-In the Figure \ref{fig:level3} we can see that despite Scraim covers many practices, the maturity level three is still too far from being achieved successfully.
+In Figure \ref{fig:level3} we can see that despite the fact that Scraim covers many practices, the maturity level three is still too far from being achieved successfully.
 
-For example some areas like Verification (VER) and Decision Analysis and Resolution (DAR), are totally impossible to achieve some type of automatic assessment.
+For example some areas like Verification (VER) and Decision Analysis and Resolution (DAR), are not currently supported by SCRAIM, so it will be impossible to automatically assess the fulfillment of their respective goals and practices by SCRAIM users.
 
 The maturity level 2 is chosen to make a more precise and accurate coverage of CMMI practices and be able to map.
 
-In the Figure \ref{fig:level2} we can see that the map for the second level of maturity is more accurate, more trustful and can be more covered automatically.
+In Figure \ref{fig:level2} we can see that the map for the second level of maturity is more accurate, more trustful and can be more covered automatically.
 	
 \begin{figure}[h]
 	\begin{center}
@@ -63,7 +64,7 @@ In the Figure \ref{fig:level2} we can see that the map for the second level of m
 	\end{center}
 \end{figure}
 
-The previous decision of making this set of tools to Scraim focusing in the level two is supported by this two assessments to the tool.
+The previous decision of making this set of tools to Scraim focusing in the level two is supported by these two assessments to the tool.
 
 
 
@@ -99,9 +100,13 @@ After some mapping this scale was confusing and far from real so the best way wa
 
 This new scale is more accurate and closer to a real assessment. In the Figure \ref{fig:mapping_4levels} is observable that the mid levels are more easily distinguished and more differentiable from the others. 
 
-\section{Electronic Assessment Questions}
+\section{Electronic Assessment Questions} \label{sec:question}
 
-Regarding the mapping, it was discovered  that some practices can not be automatically evaluated, but with some extra work and little tweaks it is possible to solve those gaps and make an automatic assessment to evaluate such practices.
+Regarding the mapping, it was discovered  that some practices can not be automatically evaluated so another way of providing some results needs to be found.
+
+The founded way is make an survey of pre-established questions. Those questions derived from CMMI assessment checklists and tools and ITMARK Appraisal tool will guarantee closer results and a more wider assessment.
+
+\section{Recommendations for extending the Scraim Support}
 
 Some of the gaps found can be solved with the integration of some Plugins, some frameworks and some rules of usage.
 
@@ -121,5 +126,3 @@ Rules, frameworks and Plugins:
 	For example the Project plan must be submitted with a certain name to the Scraim files, to be automatic evaluated or it will not be considered.
 	
 \end{itemize}
-
-Even after this workaround some practices for now are impossible to evaluate automatically, so another way of providing some results is make an survey of pre-established questions. Those questions derived from CMMI assessment checklists and tools and ITMARK Appraisal tool will guarantee closer results and a more wider assessment.
