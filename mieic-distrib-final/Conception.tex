@@ -18,16 +18,16 @@ The details of rule based and survey based assessment are provided in section \r
 In order to get a full overview of the Scraim, an assessment of the tool was performed. That assessment provides the current state of the tool and possible gaps to workaround.
 After analyzing the gaps a map can be done, that map was done between CMMI for development practices and the tool.
 
-\begin{landscape}
-	\begin{figure}[h]
+\newpage
+	\begin{figure}[!htb]
 		\begin{center}
 			\leavevmode
-			\includegraphics[width=1.6\textwidth]{assessmentprocess}
-			\caption{Assessment Process Workflow}
+			\includegraphics[width=0.9\textwidth]{assessmentprocess}
+			\caption{UML activity diagram depicting the Assessment Process Workflow}
 			\label{fig:assessmentprocess}
 		\end{center}
 	\end{figure}
-\end{landscape}
+
 
 \section{Pre-Assessment of Scraim Support} \label{sec:preassessment}
 
@@ -98,7 +98,26 @@ In the first attempt, was tried to match those levels with 5 levels, correspondi
 
 After some mapping this scale was confusing and far from real so the best way was to map and try match the four levels of SCAMPI with four levels of Scraim assessment.
 
-This new scale is more accurate and closer to a real assessment. In the Figure \ref{fig:mapping_4levels} is observable that the mid levels are more easily distinguished and more differentiable from the others. 
+This new scale is more accurate and closer to a real assessment as shown in Table \ref{tab:rules}. In the Figure \ref{fig:mapping_4levels} is observable that the mid levels are more easily distinguished and more differentiable from the others.
+
+\begin{table}[h]
+	\centering
+	\caption{Scale comparison}
+	\begin{tabular}{|p{2cm}|p{4cm}|}
+		\hline
+		SCRAIM   & SCAMPI    \\
+		\hline
+		1 & Not Implemented\\
+				\hline
+				2 & Partially Implemented\\
+				\hline
+				3 & Largely Implemented\\
+				\hline
+				4 & Fully Implemented\\
+				\hline
+	\end{tabular}
+	\label{tab:rules}
+\end{table}
 
 \section{Electronic Assessment Questions} \label{sec:question}
 
