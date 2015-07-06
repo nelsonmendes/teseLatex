@@ -62,9 +62,9 @@ The goal of this research work is to fully automate the assessment for as many p
 
 \section{PSP checker}
 
-Personal Software Process(PSP) \citep{humphrey2005psp} is a process framework with the objective of guide developers to define their own processes, track and plan their work and manage the quality of the produced products.
+The Personal Software Process (PSP) \citep{humphrey2005psp} is a process framework with the objective of guide developers to define their own processes, track and plan their work and manage the quality of the produced products.
 
-PSP checker\citep{Pinto2010} is a tool developed at FEUP that has the main objective of helping teachers to make decisions faster and help students to be able to achieve better results and understand PSP.
+PSP checker \citep{Pinto2010} is a tool developed at FEUP that has the main objective of helping teachers to evaluate the assignments submitted by PSP students  and help them to achieve better results and understand PSP.
 
 The PSP checker was only made and planned for teachers as a support for evaluation and feedback. It is suitable for students too depending on the type of teaching, that way they can improve their work. A short period of time is required to use this tool and is currently available only as a desktop application.
 
@@ -72,25 +72,26 @@ The PSP checker was only made and planned for teachers as a support for evaluati
 This desktop application has as main functionalities:
 \begin{itemize}
 	\item Automatic verification of checklists
-	\subitem Each checklist item has different types of verification and as output if an item in the checklist is completely satisfied, it is shown the line in green otherwise the line is highlighted in red or given a special message on the screen.
+	\subitem Each checklist item has different types of verification and as output; if an item in the checklist is completely satisfied, it is shown the line in green, otherwise the line is highlighted in red or given a special message on the screen.
 	\item Custom processes
-	\subitem The user, when starting the program, can choose which items of the PSP process wants to associate with this evaluation.
+	\subitem The user, when starting the program, can choose which items of the PSP process to associate with this evaluation.
 	\item Remote data importation
 	\item Illustrative charts
 	\subitem Charts that facilitate the perception of whats is wrong and well done to understand which points can be improved.
 	\item Automation of support messages (use of knowledge acquired by specialists)
 	\subitem Messages provided by specialist to understand the errors in a more complex level.
 	\item Information Import/Export (Figure \ref{fig:PSPdataimport})
-	\begin{figure}[h]
-		\begin{center}
-			\leavevmode
-			\includegraphics[width=0.63\textwidth]{PSPdataimport}
-			\caption{Example of a data import for PSPChecker}
-			\label{fig:PSPdataimport}
-		\end{center}
-	\end{figure}
 	\item Modularity and scalability
 \end{itemize}
+
+\begin{figure}[h]
+	\begin{center}
+		\leavevmode
+		\includegraphics[width=0.63\textwidth]{PSPdataimport}
+		\caption{Example of a data import for PSPChecker}
+		\label{fig:PSPdataimport}
+	\end{center}
+\end{figure}
 
 \begin{figure}[h]
 	\begin{center}
@@ -101,15 +102,18 @@ This desktop application has as main functionalities:
 	\end{center}
 \end{figure}
 
-In Figure \ref{fig:PSPresults} it are represented two of the last screens of PSPChecker. It is shown on the left hand side the checklist imported or chosen and on the right side the final screen, where we can generate charts and export the data. The lines are colored in green that meaning that was successfully checked, yellow,means that some items are not available to check automatically and red can't be checked. 
+In Figure \ref{fig:PSPresults} it are represented two of the last screens of PSPChecker. It is shown on the left hand side the checklist imported or chosen and on the right side the final screen, where we can generate charts and export the data. 
+Items successfully checked are colored in green. Items not satisfied are colored in red. Items that could not be evaluated automatically are colored in yellow.
+
+This method of evaluation is used to make a similar approach to CMMI instead of PSP.
 
 \section{Appraisal assistant}
 
-The Software Quality Institute of the Griffith University\citep{SoftwareQuality2015} developed the Appraisal Assistant tool. The Appraisal Assistant\citep{Appraisal2015} is a software application that supports the appraisal or assessment of process capability or organization maturity.
+The Software Quality Institute of the Griffith University 	\citep{SoftwareQuality2015} developed the Appraisal Assistant tool. The Appraisal Assistant \citep{Appraisal2015} is a software application that supports the appraisal or assessment of process capability or organization maturity.
 
-This tool follows consistent approaches with the requirements of ISO/IEC 15504(Information technology: Process assessment, and the Assessment Requirements for CMMI)\citep{ISOIEC} and it's distinguished from other tools by taking an evidence-driven approach to the record of evidences generated in an assessment.
+This tool follows consistent approaches with the requirements of ISO/IEC 15504 \citep{ISOIEC} and it's distinguished from other tools by taking an evidence-driven approach to the recording of evidences generated in an assessment.
 
-SQI personnels have performed SCAMPI A and B appraisals and SPICE assessments with the help of Appraisal Assistant and have been using since the first beta release. The Beta release was used to examine relationships between ISO 15504-2 and SCAMPI appraisals
+SQI personnels have performed SCAMPI A and B appraisals and SPICE assessments with the help of Appraisal Assistant and have been it using since the first beta release. The Beta release was used to examine relationships between ISO 15504-2 and SCAMPI appraisals
 
 \begin{figure}[h]
 	\begin{center}
@@ -124,7 +128,7 @@ The Appraisal Assistant provides several functionalities and benefits:
 \begin{itemize}
 	\item Support for multiple process models such as: ISO/IEC 15504-5, ISO/IEC 15504-6 (FDIS) \citep{rout2003iso}, Automotive SPICE, CMMI®-DEV v.1.2, +SAFE, and CMMI® SE/SW/IPPD/SS V 1.1 \citep{team2002capability};
 	\item User defined appraisal models;
-	\item Multiple methods for performing appraisal / assessment;
+	\item Multiple methods for performing an appraisal / assessment;
 	\item User defined assessment methods;
 	\begin{figure}[h]
 		\begin{center}
@@ -150,7 +154,9 @@ The Appraisal Assistant provides several functionalities and benefits:
 	\end{center}
 \end{figure}
 
-In Figure \ref{fig:cmmi_result} is shown an example of an appraisal result and output of the program after labeling all the process areas.
+In Figure \ref{fig:cmmi_result} it is shown an example of an appraisal result and the output of the tool after labeling all the process areas.
+
+We take advantage of the way results are presented on this tool, regarding CMMI practices organized by their areas, goals and practices.
 \newpage
 
 
@@ -178,12 +184,12 @@ ITMark will provide organizations:
 	\item Internationally recognized
 \end{itemize}
 
-The ITMark Appraisal \citep{ITMARKASSESSMENT} tool fully supports this process.
+The ITMark Appraisal tool \citep{ITMARKASSESSMENT} fully supports this process.
 
 
-When an assessment is created in the interface we can access the three areas and see all the specific questions (one question is presented in Figure \ref{fig:itmark_question}) that we need to be answered in order to get the results.
+When an assessment is created in the interface we can access the three areas and see all the specific questions that we need to answer in order to get the results in Figure \ref{fig:itmark_question}, we can see in the top the three areas and an example of a question with the possible answers that are "yes", "no" or "not applicable".
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\begin{center}
 		\leavevmode
 		\includegraphics[width=1\textwidth]{question_example_itmark}
@@ -192,11 +198,9 @@ When an assessment is created in the interface we can access the three areas and
 	\end{center}
 \end{figure}
 
-In Figure \ref{fig:itmark_question} we can see in the top the three areas and an example of a question with the possible answers that are yes, no or not applicable.
+After answering all the questions this tool will provide us graphs and some charts with the assessment results. We can see an example of those graphs in Figure \ref{fig:itmark_result1}
 
-After answering all the questions this tool will provide us graphs and some charts with the results of this assessment. We can see an example of those graphs in Figure \ref{fig:itmark_result1}
-
-\begin{figure}[h]
+\begin{figure}[H]
 	\begin{center}
 		\leavevmode
 		\includegraphics[width=0.7\textwidth]{ITmarkresults1}
@@ -205,9 +209,9 @@ After answering all the questions this tool will provide us graphs and some char
 	\end{center}
 \end{figure}
 
-The overall assessment results will be available on a bar graph like the presented on Figure \ref{fig:itmark_result2}, where we can see the maturity level associated.
+The overall assessment results will be available on a bar graph like the one presented in Figure \ref{fig:itmark_result2}, where we can see the maturity level associated.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\begin{center}
 		\leavevmode
 		\includegraphics[width=0.7\textwidth]{ITmarkresults2}
@@ -215,3 +219,5 @@ The overall assessment results will be available on a bar graph like the present
 		\label{fig:itmark_result2}
 	\end{center}
 \end{figure}
+
+As will be explained in Section \ref{sec:question}, we take advantage of the questions in this tool to help in the assessment of the practices not evaluated automatically.
