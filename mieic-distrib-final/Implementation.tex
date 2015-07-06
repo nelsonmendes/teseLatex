@@ -2,21 +2,20 @@
 
 \section*{}
 
-This chapter describes the details of implementation, in particular the architecture of the tool and the processes involved.
+This chapter describes the details of implementation, in particular the architecture of the tool and the database and module structure.
 
 \section{Architecture of the solution} \label{sec:evaluation}
 
-The solution is a module implemented on top of SCRAIM using the same technologies and same infrastructures. SCRAIM uses as programming language Ruby on Rails \citep{hansson2009ruby} and a MySQL \citep{MySql} database. The solution uses also a new framework for charts c3js \citep{c3js}.
+The solution is a module implemented on top of SCRAIM using the same technologies and infrastructures. SCRAIM is developed in the Ruby on Rails \citep{hansson2009ruby} programming language and a MySQL \citep{MySql} database. The solution uses also a new framework for charts c3js \citep{c3js}.
 
 The architecture was designed with flexibility and extensibility in mind, so that additional practices and reference models can be easily supported in the future.
 
 The architecture of the solution is presented in two parts: the database structure and the overall application structure (module structure).
 
 
-
 \section{Database structure}\label{database}
 
-The prototype was implemented inside of Scraim, in order to store all the information that is generated an extension of its database was done.
+The prototype was implemented inside of Scraim in order to store all the information that is generated an extension of its database was done.
 
 For that purpose several tables in the database were created. Each one one to be flexible enough to store the information of the automatic assessments.
 
@@ -24,7 +23,7 @@ The tables created can be viewed in Figure \ref{fig:database}, their purpose is 
 \begin{itemize}
 	\item \textbf{Model}
 	
-	This table contains the Models that are stored being classified only for its name; in this case the only model saved is CMMI Level 2.
+	This table contains the reference models agains which assessments can be made, identified by their name; in this case the only model stored is CMMI Level 2.
 	\item \textbf{Area}
 	
 	In this table are stored the Areas; each Model must have one or more Areas.
@@ -33,11 +32,11 @@ The tables created can be viewed in Figure \ref{fig:database}, their purpose is 
 	Goals are part of the Area and each Area has one or more Goals.
 	\item \textbf{Practice}
 	
-	Each Practice is a part of a Goal and can be described for its name, summary that gives a simplified description of the practice, its description which is more complete and with some examples in some cases and its weight. Each practice has different weights in the result of the assessment.
+	Each practice is characterized by its name, a summary that gives a simplified description of the practice, its description which is more complete and with some examples in some cases and its weight. Each practice has different weights in the result of the assessment.
 	
 	\item \textbf{Practice Evaluation}
 	
-	Represent each Practice evaluation; each practice is evaluated with different criteria and is saved on the database for the presentation of the results.
+	Represent each Practice evaluation; each practice is evaluated with different criteria and is saved in the database for the presentation of the results.
 	
 	\item \textbf{Global Assessment}
 	
@@ -49,7 +48,7 @@ The tables created can be viewed in Figure \ref{fig:database}, their purpose is 
 	\begin{center}
 		\leavevmode
 		\includegraphics[width=0.8\textwidth]{ClassDiagram}
-		\caption{Tables added to database}
+		\caption{Data Model of the tables added to the SCRAIM databaseTables added to database (UML class diagram)}
 		\label{fig:database}
 	\end{center}
 \end{figure}
@@ -58,11 +57,9 @@ The tables created can be viewed in Figure \ref{fig:database}, their purpose is 
 On the left side of the Figure \ref{fig:database}, the tables represented are those who are going to be populated with the information from the CMMI for Development and in the right side is where the generated information is going to be stored.
 
 
-\section{Module Structure}
+\section{Module structure}
 
-As said before, the module structure was object of study and its components were carefully analyzed in order to maintain a crucial consistency and scalability.
-
-In Figure \ref{fig:esquema} we can see the overall structure of the module created. The elements shown have a specific role in maintaining the module flexibility. 
+In Figure \ref{fig:esquema} we can see the overall structure of the module created.
 
 \textbf{Abstract Evaluator}
 
@@ -85,7 +82,7 @@ Its the constructor and main function of the module. Calls the functions that pe
 	\begin{center}
 		\leavevmode
 		\includegraphics[width=0.5\textwidth]{contoler}
-		\caption{Assessment Process}
+		\caption{Eletronic assessment process}
 		\label{fig:esquema}
 	\end{center}
 \end{figure}
