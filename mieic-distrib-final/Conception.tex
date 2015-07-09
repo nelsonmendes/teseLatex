@@ -93,7 +93,7 @@ In the first attempt, was tried to match those levels with 5 levels, correspondi
 	\end{center}
 \end{figure}
 
-After some mapping this scale was confusing and far from real so the best way was to map and try match the four levels of SCAMPI with four levels of Scraim assessment.
+After some mapping this scale was confusing and far from real so the best way was to map and try to match the four levels of SCAMPI with four levels of Scraim assessment.
 
 This new scale is more accurate and closer to a real assessment as shown in Table \ref{tab:rules}. In Figure \ref{fig:mapping_4levels} is observable that the mid levels are more easily distinguished and more differentiable from the others.
 
@@ -116,10 +116,12 @@ This new scale is more accurate and closer to a real assessment as shown in Tabl
 	\label{tab:rules}
 \end{table}
 
-In the tables presented below are explained the Rules established for the automatic assessment.
+In the tables presented below are explained the Rules established for the automatic assessment. The rules were validated with consultants from Strongstep.
 
 When in the tables are shown 2 levels (Yes or No), represents the Maximum and the Minimum of the scale considered, Yes corresponds to the level 4 and No the level 1.
-The practices that need to be evaluated with the survey, in the automatic evaluation is assessed with the result of 1, the minimum.
+The practices that need to be evaluated with the survey, in the automatic evaluation are assessed with the result of 1, the minimum.
+
+The practices that currently cannot be evaluated automatically, are assigned the result of 1 (Not Implemented) during the automatic assessment. They should be subsequently reevaluated with the survey.
 
 
 \newpage
@@ -149,6 +151,9 @@ Regarding the mapping, it was discovered  that some practices can not be automat
 
 The founded way is to make a survey based on pre-established questions. Those questions were derived from the "CMMI assessment checklist" (see Section \ref{cmmicheck}) and  the "ITMARK Appraisal tool" (see Section \ref{itmarktool}). One question example is presented in Figure \ref{fig:question_example}.
 
+
+The survey has on average 4 questions per practice of CMMI level 2 (covering all practices). The survey is not included in this documents because of its extension (40 pages).
+
 \begin{figure}[!htb]
 	\begin{center}
 		\leavevmode
@@ -170,9 +175,9 @@ Some of the gaps found in Section \ref{sec:mapping} can be solved with the integ
 	
 	\item Plugin for Document Management System Features \citep{DMSF}
 	
-	Allows to manage documents submitted on Scraim, document approval workflow to be configurable and maintain a version control of this documents.
+	Allows to manage documents submitted on Scraim, document approval workflow to be configurable, and maintain a version control of this documents.
 	
-	\item Certain names for submitted documents
+	\item Naming conventions
 	
 	For example the Project plan must be submitted with a certain name to the Scraim files, to be automatically evaluated or it will not be considered.
 	

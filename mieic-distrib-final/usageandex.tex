@@ -9,7 +9,7 @@ In this chapter it is presented an usage example of the created prototype. It is
 
 To demonstrate the prototype it is presented in this section an usage example.
 
-As said before all the prototype was implemented inside Scraim, so its usage is restricted to users that have Scraim account with this module enabled.
+As said before all the prototype was implemented inside Scraim, so its usage is restricted to users that have a Scraim account with this module enabled.
 
 \vspace{10 mm}
 
@@ -57,10 +57,6 @@ Only the text field can be empty; it is mandatory to choose at least one project
 
 \vspace{10 mm}
 \newpage
-\textbf{Survey}
-
-The Survey is the Screen where it is needed to answer all the questions, none can be skipped and only after that we can have a full assessment done and a proper result, this survey is not yet implemented, only the questions are selected.
-
 \begin{figure}[!htb]
 	\begin{center}
 		\leavevmode
@@ -69,6 +65,10 @@ The Survey is the Screen where it is needed to answer all the questions, none ca
 		\label{fig:goto_survey}
 	\end{center}
 \end{figure}
+
+\textbf{Survey}
+
+The Survey is the Screen where it is needed to answer all the questions; none can be skipped and only after that we can have a full assessment done and a proper result: This survey is not yet implemented, only the questions are selected.
 
 \vspace{10 mm}
 
@@ -98,7 +98,7 @@ When a certain process area is clicked inside the graph, like for example PP (wh
 	\end{center}
 \end{figure}
 
-It is possible to see more in detail the assessment result if the mouse cursor is over the bar that corresponds to a practice. When that bar is clicked on, it is shown in the page more information about that practice. Figure \ref{fig:practice_click}, shows us the information appended to the page when the Practice 1.1 of the first goal of Project Planning area is clicked.
+It is possible to see more in detail the assessment result if the mouse cursor is over the bar that corresponds to a practice. When that bar is clicked, it is shown in the page more information about that practice. Figure \ref{fig:practice_click}, shows the information appended to the page when the Practice 1.1 of the first goal of Project Planning area is clicked.
 
 \begin{figure}[!htb]
 	\begin{center}
@@ -111,15 +111,15 @@ It is possible to see more in detail the assessment result if the mouse cursor i
 
 After all this process, all views allow the user to return to the Home screen, that contains the list of the assessments done. The assessment that we have done and we are seeing is already present in the list of assessments.
  
-\section{Comparison between Automatic and Manual assessment} \label{sec:automatic}
+\section{Comparison between automatic and manual assessment} \label{sec:automatic}
 %	Avaliação manual vs automatica trocar titulo
 
-To determine if the electronic assessment generates results close to a manual assessment performed by an expert it is necessary to compare an automatic assessment (tool) to a manual assessment (human).
+To determine if the electronic assessment generates results close to a manual assessment performed by an expert it is necessary to compare an automatic assessment (performed by the tool) to a manual assessment (performed by a human expert).
 
 For that purpose it was chosen a project that was already finished and instantiated in SCRAIM.
 In both assessments only the two areas featured in the current implementation of this module are considered for comparison.
-
-\vspace{1cm}
+\clearpage
+\newpage
 
 \textbf{Manual Assessment}
 
@@ -141,7 +141,8 @@ In the third goal only the last practice is partially implemented the others are
 For the area Project Monitoring and Control in the first goal the first and forth practices are classified as not implemented and the others as partially implemented. In the second goal all practices are not implemented.
 
 \vspace{1cm}
-
+\clearpage
+\newpage
 \textbf{Automatic Assessment}
 
 The results of the automatic assessment performed by the developed module can be seen in Figure \ref{fig:automatic_assessment}.
@@ -171,7 +172,7 @@ For the PP area, the practices results are shown in Figure \ref{fig:results_pp}.
 Using for method of approximation the scale presented in Section \ref{sec:mapping} and comparing the automatic results with the manual assessment shown before one can conclude that in most cases the mapping of the tool matched the manual assessment. In some cases like  the SP.2.2 the risks of the project weren't recorded on SCRAIM but in a document attached to the project.
 
 
-Results for the PMC area are represented in Figure \ref{fig:results_pmc}. Using the same method that used before and comparing the two results, none practice stands out from the results, so the results are close to a real assessment.
+Results for the PMC area are represented in Figure \ref{fig:results_pmc}. Using the same method that was used before and comparing the two results, none practice stands out from the results, so the results are close to a real assessment.
 
 \begin{figure}[H]
 	\begin{center}
@@ -221,20 +222,20 @@ In Table \ref{tab:automaticmanual} is presented side by side the results obtaine
 	\label{tab:automaticmanual}
 \end{table}
 
-There is no case in no case in which the rating have opposite values (not fully and fully implemented). In 79 \% of the cases they are identical or differ by at most 1.
+There is no case in which the ratings have opposite values (not fully and fully implemented). In 79 \% of the cases they are identical or differ by at most 1.
 
-In 42 \% of the cases (practices) the ratings are identical. This statistics can be seen in Figure \ref{fig:errorresults}.
+In 42 \% of the cases (practices) the ratings are identical. These statistics can be seen in Figure \ref{fig:errorresults}.
 
 \begin{figure}[H]
 	\begin{center}
 		\leavevmode
 		\includegraphics[width=0.9\textwidth]{delta}
-		\caption{Electronic assessment average error}
+		\caption{Distribution of electronic assessment errors}
 		\label{fig:errorresults}
 	\end{center}
 \end{figure}
 
-It is possible to see that the electronic automatic ratings that differ 2 from the manual assessment are still 21\%. The explanation for the difference is that actually it is impossible to check the content of documents submitted to SCRAIM, in some cases just for using SCRAIM is automatically considered the last level or some practices are evaluated in only two levels, the maximum level (4)  or the minimum level (1) . For example the practice PP.SP1.1 is rated differently because in the automatic assessment is only seen if WBS are defined and epics are associated with backlog items, but in the manual assessment it is seen the preliminary report submitted on SCRAIM that contains some evidences for this practice not possible to evaluate yet automatically.
+It is possible to see that the electronic automatic ratings that differ by 2 from the manual assessment are still 21\%. The explanation for the difference is that actually it is impossible to check the content of documents submitted to SCRAIM; in some cases just for using SCRAIM it is automatically considered the last level or some practices are evaluated in only two levels, the maximum level (4)  or the minimum level (1) . For example the practice PP.SP1.1 is rated differently because in the automatic assessment is only seen if WBS are defined and epics are associated with backlog items, but in the manual assessment it is seen the preliminary report submitted on SCRAIM that contains some evidences for this practice not possible to evaluate yet automatically.
 
 %
 %\begin{table}[]
