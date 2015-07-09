@@ -2,7 +2,7 @@
 
 \section*{}
 
-In this chapter is are presented the process, rules and questionnaires that were conceived to enable semi-automatic SCAMPI evaluations. It is also presented an assessment of the level of support provided by SCRAIM regarding CMMI practices.
+In this chapter is presented the process, rules and questionnaires that were conceived to enable semi-automatic SCAMPI evaluations. It is also presented an assessment of the level of support provided by SCRAIM regarding CMMI practices.
 
 \section{Assessment Process} \label{sec:Approach}
 
@@ -11,7 +11,7 @@ The process starts with a selection of the projects and process areas to evaluat
 
 The survey based electronic assessment is a manual process (conducted with tool support) where the user needs to answer the questions that are provided. The rule based electronic assessment is fully automatic using the rules described later in this section.
 
-Both assessments receive project data to generate the results that can be seen afterwards. In this workflow is present too the manual adjustment, a part that can be useful if in some case a certain part is not evaluated correctly or the assessment result is by consented opinion of the team accepted or rejected. And for last is shown the final results. 
+Both assessments receive project data to generate the results that can be seen afterwards. This workflow also presents the manual adjustment, a part that can be useful if in some case a certain part is not evaluated correctly or the assessment result is by consented opinion of the team accepted or rejected. And lastly it shows the final results. 
 
 The details of rule based and survey based assessment are provided in section \ref{sec:mapping} and \ref{sec:question}.
 
@@ -82,7 +82,7 @@ One appraisal consists in classifying each practice in one of four states: Fully
 	\end{center}
 \end{figure}
 
-In the first attempt, was tried to match those levels with 5 levels, corresponding to different evaluation levels in Scraim. In the Figure \ref{fig:mapping_5levels} is possible to see the map between CMMI for Development and Scraim. In this example is analyzed the criteria from the practice 1.1 from the Project Planning area, which says, "Establish a top-level work breakdown structure (WBS) to estimate the scope of the project." and can be mapped into Scraim into this 5 levels. The first Level would be where there is none WBS item or backlog item, and the max level where all WBS are fully defined and epics with backlog items associated. 
+In the first attempt, was tried to match those levels with 5 levels, corresponding to different evaluation levels in Scraim. In the Figure \ref{fig:mapping_5levels} is possible to see the map between CMMI for Development and Scraim. In this example it is analyzed the criteria from the practice 1.1 from the Project Planning area, which says, "Establish a top-level work breakdown structure (WBS) to estimate the scope of the project." and can be mapped into Scraim into this 5 levels. The first Level would be where there is none WBS item or backlog item, and the max level where all WBS are fully defined and epics with backlog items associated. 
 
 \begin{figure}[h]
 	\begin{center}
@@ -116,6 +116,12 @@ This new scale is more accurate and closer to a real assessment as shown in Tabl
 	\label{tab:rules}
 \end{table}
 
+In the tables presented below are explained the Rules established for the automatic assessment.
+
+When in the tables are shown 2 levels (Yes or No), represents the Maximum and the Minimum of the scale considered, Yes corresponds to the level 4 and No the level 1.
+The practices that need to be evaluated with the survey, in the automatic evaluation is assessed with the result of 1, the minimum.
+
+
 \newpage
 
 
@@ -131,11 +137,17 @@ This new scale is more accurate and closer to a real assessment as shown in Tabl
 
 \includepdf[pages=1,scale=0.85,pagecommand={\subsection{Supplier Agreement Management}\label{sam_rules}\hfill}]{SAM.pdf}
 
+\includepdf[pages=1,scale=0.85,pagecommand={\subsection{Measurement and Analysis}\label{ma_rules}\hfill}]{MA.pdf}
+
+\includepdf[pages=1,scale=1,pagecommand={\subsection{Process and Product Quality Assurance}\label{ppqa_rules}\hfill}]{PPQA.pdf}
+
+\includepdf[pages=1,scale=0.85,pagecommand={\subsection{Configuration Management}\label{cm_rules}\hfill}]{CM.pdf}
+
 \section{Electronic assessment questions} \label{sec:question}
 
 Regarding the mapping, it was discovered  that some practices can not be automatically evaluated so another way of providing some results needs to be found.
 
-The founded way is make a survey based on pre-established questions. Those questions were derived from the "CMMI assessment checklist" (see Section \ref{cmmicheck}) and  the "ITMARK Appraisal tool" (see Section \ref{itmarktool}). One question example is presented in Figure \ref{fig:question_example}.
+The founded way is to make a survey based on pre-established questions. Those questions were derived from the "CMMI assessment checklist" (see Section \ref{cmmicheck}) and  the "ITMARK Appraisal tool" (see Section \ref{itmarktool}). One question example is presented in Figure \ref{fig:question_example}.
 
 \begin{figure}[!htb]
 	\begin{center}
