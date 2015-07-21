@@ -44,10 +44,10 @@
 
 \begin{document}
 
-\title{\vspace*{-8mm}\textbf{\textsc{Modelo de Escrita de Resumos de\\Projecto/Dissertação: um Exemplo}}}
-\author{\emph{António Manuel Silva}\\[2mm]
-\small{Projecto/Dissertação realizado sob a orientação do \emph{Prof.\ José Marco Soares}}\\
-\small{na \emph{FazSoft Lda}}}
+\title{\vspace*{-8mm}\textbf{\textsc{Electronic Assessment for Software Development Certifications}}}
+\author{\emph{Nelson Daniel Ribeiro Mendes}\\[2mm]
+\small{Dissertação realizada sob a orientação do \emph{Prof.\ João Pascoal Faria}}\\
+\small{na \emph{Strongstep - Innovation In Software Quality, Lda}}}
 \date{}
 \maketitle
 %no page number 
@@ -59,125 +59,86 @@
 
 \section{Motivação}\label{sec:motiva}
 
-Neste documento apresentam-se alguns conselhos e instruções para a preparação dos resumos de projecto/dissertação. 
-Pede-se aos autores o favor de, dentro do possível, cumprirem com as instruções que são dadas, assim como com a estrutura apresentada, de forma a manter-se o mesmo aspecto em todos os resumos. 
-Nas sub-secções~\ref{sec:lingua} a ~\ref{sec:number} podem encontrar-se alguns detalhes sobre a formatação do documento. 
+Com o efeito da globalização, assistimos a uma mudança no paradigma dos mercados atuais, mudança essa que forçou as organizações a melhorar os seus processos de modo a manter a sua competitividade e deste modo garantir uma posição favorável no mercado. Para que tal aconteça, é necessário que comecem a simplificar e a perder menos tempo nos processos, pois só assim é possível à organização focar-se no que realmente interessa: a criação de valor.
 
-Na secção ``Motivação'' deve ser apresentado o enquadramento do trabalho, dando ideia das necessidades que o mesmo cobre.
+As certificações são um reconhecimento formal de uma organização que fornecem orientação e ferramentas, no sentido de garantir que os produtos e serviços vão de encontro às necessidades e requisitos dos clientes e a sua qualidade é constantemente melhorada.
 
-\section{Objectivos}\label{sec:goals}
+As certificações são um reconhecimento formal de uma organização que fornecem orientação e ferramentas, no sentido de garantir que os produtos e serviços vão de encontro às necessidades e requisitos dos clientes e a sua qualidade é constantemente melhorada. Apesar de serem úteis para a organização, as certificações exigem um esforço muito elevado e consomem muito tempo. Por exemplo, o método SCAMPI exige um esforço elevado, sendo por vezes muito doloroso e custoso monetariamente para a organização.
 
-A secção ``Objectivos'' deve enunciar claramente os objectivos a atingir com o trabalho de projecto/dissertação, enquadrando-os na respectiva área de actividade a que o trabalho se destina. 
-Por exemplo, este documento tem como objectivos:
+
+O método SCAMPI é o método standard de avaliação para a melhoria de processos, associado ao modelo CMMI que é um modelo para as organizações melhorarem os seus processos e é exigido por muitos contratos do governo dos EUA, especialmente no âmbito do desenvolvimento de software. SCRAIM é a ferramenta que vai fornecer meios para simplificar esse tipo de avaliações, com o objetivo de economizar tempo e consequentemente dinheiro.
+
+
+\section{Objetivos}\label{sec:goals}
+
+O suporte de ferramentas é fundamental para facilitar a adoção das práticas CMMI.
+SCRAIM \cite{SCRAIM} é um exemplo de uma ferramenta de gestão de ciclos de vida de projetos, desenhada especificamente para facilitar as implementações CMMI.
+O principal objetivo desta dissertação é desenvolver um grupo de metodologias, técnicas e ferramentas integradas no SCRAIM, que vão tornar as avaliações e certas partes das certificações mais fáceis e menos custosas para os utilizadores SCRAIM.
+Especificamente os objetivos desta dissertação são:
+
 \begin{itemize}
-\item Servir de modelo/exemplo do ponto de vista da dos resumos;
-\item Apresentar o aspecto gráfico que se pretende para os resumos;
-\item Disponibilizar \emph{templates} a quem pretenda utilizar \LaTeX.
+	\item Analisar até que ponto a ferramenta SCRAIM apoia a implementação (incluindo a recolha de evidências) das práticas específicas do CMMI-DEV \cite{Development2010}  para os níveis de maturidade 2 e 3 (ML2-3), e recomendar melhorias relevantes para o SCRAIM;
+	\item Definir regras para avaliar automaticamente o grau de cumprimento das práticas do CMMI-DEV ML2 pelos utilizadores SCRAIM, através da análise dos dados de um projeto de uma organização e outras evidências relevantes;
+	\item Definir questionários para auxiliar os utilizadores a fazer uma avaliação manual, para as práticas de CMMI-DEV ML2 que não podem ser avaliadas automaticamente;
+	\item Implementar as regras no SCRAIM e os questionários definidos nos passos (ii) e (iii), para algumas áreas do processo, incluindo interfaces de apropriadas para realizar as avaliações e visualizar os resultados da avaliação;
+	\item Validar a abordagem destas avaliações eletrónica em projetos do mundo real.
 \end{itemize}
 
 \section{Descrição do Trabalho}\label{sec:work}
 
-Na secção ``Descrição do Trabalho'' (com este ou com outro nome que se julgue mais adequado) devem ser apresentadas as principais partes do trabalho, começando pela sua estruturação. Devem ser mencionadas as tecnologias utilizadas, com referências à sua interdependência e interligação dando especial ênfase aos componentes desenvolvidos pelo estudante no âmbito do trabalho em causa.
+\subsection{Estado da arte}
+Várias ferramentas são atualmente utilizadas de modo a facilitar e ajudar os avaliadores no seu trabalho de terreno. Outras ferramentas permitem aos utilizadores obter uma avaliação baseada nas suas respostas.
+As ferramentas estudadas foram:
+\begin{itemize}
+	\item CMMI assessment checklist \cite{capabilityassess}
+	\item PSPchecker \cite{Pinto2010}
+	\item Appraisal assistant \cite{Appraisal2015}
+	\item ITMark appraisal tool ~\cite{ITMARKASSESSMENT}
+\end{itemize}
 
-No presente documento, seguem-se 9 subsecções com instruções acerca da extensão da comunicação, margens, estilos e outras recomendações gerais acerca da elaboração da versão final dos resumos.
+\subsection{Conceção}
 
-\subsection{Línguas Obrigatórias}\label{sec:lingua}
+Um dos objetivos desta dissertação era avaliar o nível de suporte do SCRAIM quanto ao CMMI; esta pesquisa e devida apresentação é feita na presente dissertação, sendo que para isso foi seito uma avaliação com recurso a uma ferramenta usada pelos avaliadores.
 
-Os resumos deverão ser apresentados, em ficheiros separados, em versões portuguesa e inglesa. 
-No resumo em Português e em caso de necessidade de utilização de termos em língua Inglesa, estes deverão ser devidamente salientados pela adopção da fonte em itálico, como, por exemplo, \emph{Ray-Tracing}.
+Foi criado um processo de forma a ser possível fazer a avaliação eletrónica, conseguindo simultaneamente fazer a parte automática (baseada em regras) e a parte manual (baseada em questões). Essas questões foram selecionadas para as regras que não puderam ser avaliadas recorrendo às regras.
 
-\subsection{Cabeçalho de Identificação}
+Algumas das lacunas encontradas podem ser resolvidas com a integração plugins, frameworks e regras de uso, sendo apresentadas essas recomendações.
 
-O cabeçalho de identificação deve ser centrado e inicia-se com o título da comunicação, em letras maiúsculas de tamanho 12 e em negrito. 
-Seguem-se, em linhas separadas e em tamanho 9, a identificação do estudante, da empresa e dos orientadores (estes dois numa única linha). 
-Todos os quatro nomes devem ser em itálico.
 
-\subsection{Extensão do Artigo e Tipo de Letra}
+\subsection{Implementação}
+After defining the rules was necessary to validate the rules, so it an implementation fo the rules was mandatory.
 
-Cada resumo deve ser formatado com texto a duas colunas, não devendo exceder duas páginas de formato A4. 
-\textbf{As duas colunas devem terminar sensivelmente à mesma altura}, em cada uma das páginas. 
-
-O tipo de letra para o texto genérico deverá ser \emph{Times New Roman} com tamanho 9 e espaçamento simples entre linhas. 
-O espaçamento entre parágrafos deverá ser estendido a 1.5 linhas (0.5 linha de espaçamento extra).
-
-\subsection{Dimensões das Margens}
-
-As margens a manter à volta do texto deverão ser as constantes na Tab.~\ref{tab:medidas}.
-
-\begin{table}[H]
-  \centering
-  \caption{Margens expressas em centímetros}
-\begin{tabular}{c | c}
-	\hline
-\textbf{Espaçamento} & \textbf{Medida}\\
-	\hline
-	\hline
-        Margem Superior & 3 cm\\
-        Margem Inferior & 3 cm\\
-        Margem Esquerda & 3 cm\\
-        Margem Direita  & 3 cm\\
-        Entre Colunas   & 1.2 cm\\
-	\hline
-\end{tabular}
-  \label{tab:medidas}
-\end{table}
-
-\subsection{Corpo do Texto}
-
-Todos os títulos de secções e subsecções devem ser escritos em negrito e com um espaçamento para cima ligeiramente superior ao de um parágrafo normal. 
-Os títulos de níveis um e dois devem ter tamanhos, respectivamente, 11 e 9. 
-As ``subsubsecções'' devem ser evitadas.
-
-\subsection{Numeração das Secções}
-
-As secções deverão ser numeradas com início em "1", de acordo com os níveis e subníveis respectivos, usando-se o ponto como separador.
-
-\subsection{Figuras, Equações e Quadros}
-
-As figuras e as tabelas deverão ser centradas, sempre que possível, à largura da coluna de texto em que se
-inserem (Tab.~\ref{tab:medidas} e Fig.~\ref{fig:figura}). 
-As figuras e tabelas cujas dimensões não o permitam, podem ser centradas à largura da página.
+The prototype developed was implemented on top of SCRAIM and the architecture was another point of work, in order to get a flexible and scalable architecture, taking for base the same technologies that it uses.
+An  expansion of the database was done, inserting new tables and an adding models, views and controls to Ruby on Rails in order to implement this prototype on top of SCRAIM. All expansions can be seen in  Figure \ref{fig:figura}.
 
 \begin{figure}[H]
-\centerline{\includegraphics[scale=.6]{figura.png}}
-\caption{Esta é a legenda da figura}  
-\label{fig:figura}
+	\centerline{\includegraphics[scale=.3]{presentation.png}}
+	\caption{Data Model of the tables added to the SCRAIM database}  
+	\label{fig:figura}
 \end{figure}
 
-As legendas das figuras, a negrito, devem ser colocadas na sua parte inferior, contendo a respectiva numeração antecedida do termo \textbf{Fig.} 
-O mesmo é aplicável às tabelas, excepto que a legenda deve ser iniciada pelo termo \textbf{Tab.}\ e deve ser colocada acima da tabela respectiva. 
-Devem ser evitadas figuras ou outros elementos com cores.
+\subsection{Resultados}
+To determine if the electronic assessment generates results close to a manual assessment performed by an expert it is necessary to compare an automatic assessment (performed by the tool) to a manual assessment (performed by a human expert).
 
-\begin{equation}
-  S_{L,i} = S_{L,i-1} . (1-S_{P,i-1}) = \prod_{k=0}^{i-1} (1-S_{p,k}) \label{eq:cif}
-\end{equation}
-% \begin{eqnarray}
-% S_{L,i} &=& S_{L,i-1} . (1-S_{P,i-1}) \nonumber\\
-%        &=& \prod_{k=0}^{i-1} (1-S_{p,k}) \label{eq:cif}
-% \end{eqnarray}
+In both assessments only the two areas featured in the current implementation of this module are considered for comparison.
 
-As equações deverão conter a respectiva numeração na mesma linha de texto e à sua direita, entre parêntesis, como se mostra no exemplo da Equação~\ref{eq:cif}.
+The distribution of the difference and matching of the two results are shown in Figure \ref{fig:figura2}.
 
-As figuras deverão ser numeradas a partir do número 1 e com uma única sequência, i.e., sem reinício em cada secção. 
-O mesmo deve suceder com as equações e com as tabelas.
-
-\subsection{Numeração de Páginas}\label{sec:number}
-
-As páginas \textbf{NÃO} devem ser numeradas.
-
-\subsection{Codificação dos Caracteres}\label{sec:encomding}
-
-Este exemplo está escrito em UTF-8; para outras codificações deverá
-ser alterado \texttt{\\usepackage[utf8]\{inputenc\}}.
+\begin{figure}[H]
+	\centerline{\includegraphics[scale=.5]{delta.png}}
+	\caption{Distribution of electronic assessment errors}  
+	\label{fig:figura2}
+\end{figure}
 
 
-\section{Conclusões}\label{sec:conclui}
+It is possible to see that the electronic automatic ratings that differ by 2 from the manual assessment are still 21\%. The explanation for the difference is that actually it is impossible to check the content of documents submitted to SCRAIM; in some cases just for using SCRAIM  it is automatically considered the last level or some practices are evaluated in only two levels, the maximum level (4) or the minimum level (1) . For example the practice PP.SP1.1 is rated differently because in the automatic assessment is only seen if WBS are defined and epics are associated with backlog items, but in the manual assessment it is seen the preliminary report submitted on SCRAIM that contains some evidences for this practice not possible to evaluate yet
+automatically.
 
-Espera-se que este documento possa contribuir para uma melhor qualidade dos resumos dos projectos/dissertações do MIEIC/FEUP.
+\subsection{Conclusões}
 
-Documentos que não respeitem este aspecto gráfico serão liminarmente recusados, ficando os respectivos autores em falta em relação à sua entrega.
+All the goals established in the start of this thesis were almost completely fulfilled. The group of tools, methodologies and techniques accomplished resulted in a prototype of an automatic assessment module in SCRAIM. The results generated by the prototype are promising, getting very close to a real assessment.
+It was intended to reduce the costs and time of a SCAMPI evaluation and with the comparative analysis made we can say that this approach will make that happen and the prototype when extended and completed with the future work will facilitate the SCAMPI appraisals.
 
-Para as dissertações existem regras definidas noutro lado~\cite{kn:Mat93}.
 
 %%English version: comment first, uncomment second
 \bibliographystyle{unsrt-pt}  % numeric, unsorted refs
